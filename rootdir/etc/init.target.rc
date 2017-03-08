@@ -110,7 +110,9 @@ on charger
    chmod 0664 /sys/class/power_supply/bms/voltage_ocv
    start vm_bms
 
-on fs
+on zygote-start
+    start zygote
+
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
     write /sys/block/mmcblk1/queue/iostats 0
