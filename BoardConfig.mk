@@ -189,6 +189,7 @@ TARGET_NO_RPC := true
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
 # Wi-Fi
