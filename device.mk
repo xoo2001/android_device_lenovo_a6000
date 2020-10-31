@@ -65,6 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
+    ro.com.android.mobiledata=false \
     dev.pm.dyn_samplingrate=1 \
     persist.timed.enable=true \
     ro.hardware.egl=adreno
