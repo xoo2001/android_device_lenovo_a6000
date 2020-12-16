@@ -644,6 +644,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sysfs
+
 # AOSP filesystems
 PRODUCT_PACKAGES += \
     fsck.exfat \
