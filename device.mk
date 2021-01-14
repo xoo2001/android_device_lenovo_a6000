@@ -712,4 +712,8 @@ $(call inherit-product, build/make/target/product/go_defaults_512.mk)
 # Device was launched with KK
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 
+# Privapp-permissions whitelisting
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=enforce
+
 $(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
