@@ -680,7 +680,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/googledialergo-sysconfig.xml:system/etc/sysconfig/googledialergo-sysconfig.xml
 
 # Inherit common Android Go defaults.
-$(call inherit-product, build/make/target/product/go_defaults_512.mk)
+$(call inherit-product, build/make/target/product/go_defaults.mk)
 
 # Device was launched with KK
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
