@@ -195,7 +195,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-impl \
-    android.hardware.camera.provider@2.5-service-lazy \
+    android.hardware.camera.provider@2.5-service \
     camera.device@1.0-impl \
     camera.msm8916 \
     libmm-qcamera \
@@ -203,7 +203,6 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.camera.enableLazyHal=true \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0
 
