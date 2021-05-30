@@ -60,6 +60,7 @@ on late-fs
     start bootanim
     start vendor.gralloc-2-0
     start vendor.hwcomposer-2-1
+    write /sys/class/graphics/fb0/dyn_pu 1
 
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
